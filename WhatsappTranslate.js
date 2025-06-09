@@ -597,7 +597,7 @@ function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerial
         });
 
         const commonPhrases = [
-            '您好！感谢通过我们Alisa.shop网站添加我为联系人！我是Nala。很高兴和您在这里联系！请问有什么我可以帮忙的吗？😊',
+            '您好！感谢通过我们网站添加我为联系人！我是Nala。很高兴和您在这里联系！请问有什么我可以帮忙的吗？😊',
             '这款产品有库存，您可以下单。',
             '您对哪款产品感兴趣？请给我一个链接。',
             '你好，页面上显示了它的价格和运费成本。',
