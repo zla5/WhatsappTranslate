@@ -23,7 +23,7 @@
 
 2. **添加脚本**：
    - 点击浏览器中的 Tampermonkey 图标，选择 **创建新脚本**。
-   - 将本仓库中的 `whatsapp-auto-translate.js` 文件内容（或 `whatsapp - 副本 - 副本.txt`）复制粘贴到编辑器中。
+   - 将本仓库中的 `WhatsappTranslate.js` 文件内容复制粘贴到编辑器中。
    - 保存脚本（Ctrl+S 或 Cmd+S）。
 
 3. **访问 WhatsApp Web**：
