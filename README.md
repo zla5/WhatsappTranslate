@@ -1,4 +1,4 @@
-# WhatsApp 自动翻译脚本
+# WhatsApp 翻译脚本
 
 这是一个用于 WhatsApp Web 的 Tampermonkey 用户脚本，通过电话区号自动检测国家、语言、货币和当地时间，并提供消息自动翻译功能（使用免费谷歌翻译 API）。此外，脚本还支持常用短语列表，方便电商（如 Alisa.shop）客服使用。
 
