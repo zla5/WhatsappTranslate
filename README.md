@@ -11,7 +11,9 @@
 - **消息翻译按钮**：为接收的消息添加“翻译”按钮，支持翻译为中文（zh-CN），自动检测源语言。
 - **语言偏好保存**：使用 localStorage 保存每个电话号码的手动语言选择。
 - **响应式界面**：自定义样式的输入框、按钮和翻译界面，与 WhatsApp Web 无缝集成。
-[![Watch the video](https://i9.ytimg.com/vi/oryUHlhAkbs/mq2.jpg)](https://www.youtube.com/watch?v=oryUHlhAkbs)
+
+- 
+![Translation Demo](https://raw.githubusercontent.com/zla5/WhatsappTranslate/refs/heads/main/%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
 ## 安装
 
 1. **安装 Tampermonkey**：
