@@ -12,7 +12,7 @@
 - **语言偏好保存**：使用 localStorage 保存每个电话号码的手动语言选择。
 - **响应式界面**：自定义样式的输入框、按钮和翻译界面，与 WhatsApp Web 无缝集成。
 
-- 
+
 ![Translation Demo](https://raw.githubusercontent.com/zla5/WhatsappTranslate/refs/heads/main/%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
 ## 安装
 
