@@ -1,4 +1,4 @@
-# WhatsApp 翻译脚本
+# WhatsApp 翻译插件 WhatsApp Translation
 
 
 [![WhatsApp Web](https://img.shields.io/badge/WhatsApp-Web-green.svg)](https://web.whatsapp.com/)
