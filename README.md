@@ -1,57 +1,67 @@
 # WhatsApp 翻译脚本
 
-这是一个用于 WhatsApp Web 的 Tampermonkey 用户脚本，通过电话区号自动检测国家、语言、货币和当地时间，并提供消息自动翻译功能（使用免费谷歌翻译 API）。此外，脚本还支持常用短语列表，方便电商客服使用。
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![WhatsApp Web](https://img.shields.io/badge/WhatsApp-Web-green.svg)](https://web.whatsapp.com/)
+
+这是一个为 WhatsApp Web 设计的插件，集成自动翻译、电话区号检测和电商客服常用功能。基于免费谷歌翻译 API，提供消息翻译、常用短语选择以及国家信息展示。
 
 ## 功能
 
-- **自动翻译**：将发送的消息翻译为收件人的语言（基于电话区号）或手动选择的语言，支持自动语言检测。
-- **国家与语言检测**：根据电话区号显示对应的国家、语言、货币和当地时间。
-- **自定义输入框**：在 WhatsApp Web 侧边栏添加电话号码输入框，直接发起聊天。
-- **常用短语**：提供可点击的常用短语列表，适用于电商客服场景。
-- **消息翻译按钮**：为接收的消息添加“翻译”按钮，支持翻译为中文（zh-CN），自动检测源语言。
-- **语言偏好保存**：使用 localStorage 保存每个电话号码的手动语言选择。
-- **响应式界面**：自定义样式的输入框、按钮和翻译界面，与 WhatsApp Web 无缝集成。
+- **消息自动翻译**：支持发送消息翻译为收件人语言（基于电话区号或手动选择），支持自动语言检测。
+- **国家信息检测**：根据电话区号显示国家、语言、货币和实时当地时间。
+- **自定义输入框**：在 WhatsApp Web 侧边栏添加电话号码输入框，快速发起聊天。
+- **常用短语**：提供可点击的客服常用短语列表，提升效率。
+- **消息翻译按钮**：为接收消息添加“翻译”按钮，支持翻译为中文（zh-CN），自动检测源语言。
+- **语言偏好保存**：通过 localStorage 保存每个号码的手动语言选择。
+- **响应式界面**：无缝集成 WhatsApp Web，界面友好且美观。
 
+![翻译演示](https://raw.githubusercontent.com/zla5/WhatsappTranslate/main/%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
 
-![Translation Demo](https://raw.githubusercontent.com/zla5/WhatsappTranslate/refs/heads/main/%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
-## 安装
+## 安装方法
+
+### 1. Chrome 插件安装
+1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
+2. 打开 Chrome 的扩展页面（`chrome://extensions/`）。
+3. 启用“开发者模式”，将 `.crx` 文件拖入页面完成安装。
+
+### 2. Tampermonkey 脚本安装
+> 适合手机/平板用户，可通过 Via 浏览器使用脚本。
 
 1. **安装 Tampermonkey**：
-   在你的浏览器中安装 Tampermonkey 扩展：
-   - [Chrome](https://www.tampermonkey.net/)
-   - [Firefox](https://www.tampermonkey.net/)
-   - [Edge](https://www.tampermonkey.net/)
-   - [Safari](https://www.tampermonkey.net/)
+   - Chrome: [Tampermonkey](https://www.tampermonkey.net/)
+   - Firefox: [Tampermonkey](https://www.tampermonkey.net/)
+   - Edge: [Tampermonkey](https://www.tampermonkey.net/)
+   - Safari: [Tampermonkey](https://www.tampermonkey.net/)
 
 2. **添加脚本**：
-   - 点击浏览器中的 Tampermonkey 图标，选择 **创建新脚本**。
-   - 将本仓库中的 `WhatsappTranslate.js` 文件内容复制粘贴到编辑器中。
+   - 点击 Tampermonkey 图标，选择“创建新脚本”。
+   - 复制本仓库中 `WhatsAppTranslate.js` 的内容到编辑器。
    - 保存脚本（Ctrl+S 或 Cmd+S）。
 
-3. **访问 WhatsApp Web**：
-   - 打开 [WhatsApp Web](https://web.whatsapp.com/)。
-   - 脚本将自动运行并添加自定义界面元素。
+3. **运行脚本**：
+   - 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 
 ## 使用方法
 
 ### 发起聊天
-1. 在 WhatsApp Web 侧边栏顶部的输入框中输入电话号码（包含区号，例如 `+12025550123`）。
-2. 点击 **发起聊天** 按钮，跳转到对应号码的聊天界面。
+1. 在侧边栏顶部输入框中输入电话号码（包含区号，如 `+12025550123`）。
+2. 点击“发起聊天”按钮，跳转至对应聊天窗口。
 
 ### 查看国家信息
-- 聊天界面显示电话号码时，脚本会在号码下方自动显示国家、语言、货币和当地时间。
-- 当地时间每秒更新，基于检测到的时区。
+- 聊天界面显示号码时，自动展示国家、语言、货币和实时当地时间（每秒更新）。
 
-### 翻译发送消息
-1. 在聊天底部，使用文本区域输入消息（默认源语言：中文 zh-CN）。
-2. 从下拉菜单选择目标语言（或选择“自动”以使用基于区号的语言）。
-3. 点击 **发送** 按钮或按 Enter 键翻译并发送消息。
-4. 手动选择的语言会按电话号码保存，供后续使用。
+### 发送翻译消息
+1. 在聊天输入框中输入消息（默认源语言：中文 zh-CN）。
+2. 从下拉菜单选择目标语言，或选择“自动”以基于区号检测语言。
+3. 点击“发送”或按 Enter，消息将翻译后发送。
+4. 手动选择的语言会按号码保存，方便后续使用。
 
 ### 使用常用短语
-- 输入框下方显示编号的常用短语列表（例如客服用语）。
-- 点击短语将其填充到输入框，可直接发送或编辑。
+- 输入框下方显示编号的客服短语列表。
+- 点击短语填充到输入框，可直接发送或编辑。
 
 ### 翻译接收消息
-- 每条接收消息旁会显示一个 **翻译** 按钮。
-- 点击按钮将消息翻译为中文（zh-CN），自动检测源语言。
+- 每条接收消息旁有“翻译”按钮，点击翻译，自动检测源语言。
+
+## 贡献
+欢迎提交 issue 或 pull request，共同改进脚本功能！
