@@ -1,6 +1,6 @@
 # WhatsApp 翻译脚本
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 [![WhatsApp Web](https://img.shields.io/badge/WhatsApp-Web-green.svg)](https://web.whatsapp.com/)
 
 这是一个为 WhatsApp Web 设计的插件，集成自动翻译、电话区号检测和电商客服常用功能。基于免费谷歌翻译 API，提供消息翻译、常用短语选择以及国家信息展示。
@@ -11,8 +11,8 @@
 - **国家信息检测**：根据电话区号显示国家、语言、货币和实时当地时间。
 - **自定义输入框**：在 WhatsApp Web 侧边栏添加电话号码输入框，快速发起聊天。
 - **常用短语**：提供可点击的客服常用短语列表，提升效率。
-- **消息翻译按钮**：为接收消息添加“翻译”按钮，支持翻译为中文（zh-CN），自动检测源语言。
-- **语言偏好保存**：通过 localStorage 保存每个号码的手动语言选择。
+- **消息翻译按钮**：为接收消息添加“翻译”按钮，自动检测源语言。
+- **语言偏好保存**：针对每个客户的语言偏好可以单独设定。
 - **响应式界面**：无缝集成 WhatsApp Web，界面友好且美观。
 
 ![翻译演示](https://raw.githubusercontent.com/zla5/WhatsappTranslate/main/%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
