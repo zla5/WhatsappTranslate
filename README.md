@@ -20,34 +20,34 @@
 
 ## 安装方法
 
-### 1. Chrome 插件安装
+### 1. Chrome 插件安装方法
 1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
 2. 进入chrome扩展程序页面chrome://extensions/
 3. 点击启用右上角开发者模式，刷新当前页面，否则会报错“程序包无效”无法安装。
 4. 拖动到Chrome中点击安装
 5. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 
-### 1. 360浏览器/360极速浏览器 插件安装
+### 1. 360浏览器/360极速浏览器 插件安装方法
 1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
 2. 拖动到以360浏览器/360极速浏览器中点击安装。
 3. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 4. 
-### 2. 安卓手机/平板 插件安装
+### 2. 安卓手机/平板 插件安装方法
 1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上。
 2. 安装[Via浏览器](https://res.viayoo.com/v1/via-release-cn.apk)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
 3. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 ![via浏览器演示](https://github.com/zla5/WhatsappTranslate/blob/bbab064b8ba93436bffb8520d8c1642f672f1342/%E6%89%8B%E6%9C%BAvia%E6%B5%8F%E8%A7%88%E5%99%A8%E6%BC%94%E7%A4%BA.jpg)
 
-### 2. Tampermonkey 脚本安装
+### 3. Tampermonkey 脚本安装方法
 > 适合电脑用户。
 
-1. **安装 Tampermonkey**：
+1. **浏览器安装 Tampermonkey**：
    - Chrome: [Tampermonkey](https://www.tampermonkey.net/)
    - Firefox: [Tampermonkey](https://www.tampermonkey.net/)
    - Edge: [Tampermonkey](https://www.tampermonkey.net/)
    - Safari: [Tampermonkey](https://www.tampermonkey.net/)
 
-2. **添加脚本**：
+2. **Tampermonkey添加脚本**：
    - 点击 Tampermonkey 图标，选择“创建新脚本”。
    - 复制本仓库中 `WhatsAppTranslate.js` 的内容到编辑器。
    - 保存脚本（Ctrl+S 或 Cmd+S）。
