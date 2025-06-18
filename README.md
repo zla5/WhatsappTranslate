@@ -27,7 +27,7 @@
 
 ### 2. Tampermonkey 脚本安装
 > 适合电脑/手机/平板用户，手机/平板用户可以安装Via浏览器，然后在设置-脚本中点击"+"号导入这个脚本。
-!(https://github.com/zla5/WhatsappTranslate/blob/bbab064b8ba93436bffb8520d8c1642f672f1342/%E6%89%8B%E6%9C%BAvia%E6%B5%8F%E8%A7%88%E5%99%A8%E6%BC%94%E7%A4%BA.jpg)
+![via浏览器演示](https://github.com/zla5/WhatsappTranslate/blob/bbab064b8ba93436bffb8520d8c1642f672f1342/%E6%89%8B%E6%9C%BAvia%E6%B5%8F%E8%A7%88%E5%99%A8%E6%BC%94%E7%A4%BA.jpg)
 
 1. **安装 Tampermonkey**：
    - Chrome: [Tampermonkey](https://www.tampermonkey.net/)
