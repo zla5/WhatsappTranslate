@@ -14,7 +14,8 @@
 - **消息翻译按钮**：为接收消息添加“翻译”按钮，自动检测源语言。
 - **语言偏好保存**：针对每个客户的语言偏好可以单独设定。
 - **响应式界面**：无缝集成 WhatsApp Web，界面友好且美观。
-
+- **绝不封号**：本地翻译交互，并没有调用WhatsApp任何api，一切都是模拟手动消息的发送操作。作者我就是外贸老鸟，已经用了十几年。
+- 
 ![翻译演示](https://raw.githubusercontent.com/zla5/WhatsappTranslate/main/%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
 
 ## 安装方法
