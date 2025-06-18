@@ -23,7 +23,7 @@
 ### 1. Chrome 插件安装
 1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
 2. 进入chrome扩展程序页面chrome://extensions/
-3. 点击启用右上角开发者模式，刷新当前页面，否则会报错无法安装。
+3. 点击启用右上角开发者模式，刷新当前页面，否则会报错“程序包无效”无法安装。
 4. 拖动到Chrome中点击安装
 5. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 
