@@ -27,7 +27,7 @@
 
 ### 2. 安卓手机/平板 插件安装
 1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上。
-2. 安装Via浏览器，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
+2. 安装[Via浏览器](https://res.viayoo.com/v1/via-release-cn.apk)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
 3. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 ![via浏览器演示](https://github.com/zla5/WhatsappTranslate/blob/bbab064b8ba93436bffb8520d8c1642f672f1342/%E6%89%8B%E6%9C%BAvia%E6%B5%8F%E8%A7%88%E5%99%A8%E6%BC%94%E7%A4%BA.jpg)
 
