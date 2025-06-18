@@ -19,13 +19,13 @@
 
 ## 安装方法
 
-### 1. Chrome 插件安装
+### 1. 360浏览器/360极速浏览器 插件安装 (暂时不支持chrome)
 1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
-2. 打开 Chrome 的扩展页面（`chrome://extensions/`）。
-3. 启用“开发者模式”，将 `.crx` 文件拖入页面完成安装。
+2. 拖动到以360浏览器/360极速浏览器中点击安装。
+
 
 ### 2. Tampermonkey 脚本安装
-> 适合手机/平板用户，可通过 Via 浏览器使用脚本。
+> 适合电脑/手机/平板用户，手机/平板用户可以安装Via浏览器，然后导入这个脚本。
 
 1. **安装 Tampermonkey**：
    - Chrome: [Tampermonkey](https://www.tampermonkey.net/)
