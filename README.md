@@ -25,7 +25,7 @@
 
 
 ### 2. Tampermonkey 脚本安装
-> 适合电脑/手机/平板用户，手机/平板用户可以安装Via浏览器，然后导入这个脚本。
+> 适合电脑/手机/平板用户，手机/平板用户可以安装Via浏览器，然后在设置-脚本中点击"+"号导入这个脚本。
 
 1. **安装 Tampermonkey**：
    - Chrome: [Tampermonkey](https://www.tampermonkey.net/)
