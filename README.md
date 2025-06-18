@@ -20,11 +20,18 @@
 
 ## 安装方法
 
-### 1. 360浏览器/360极速浏览器 插件安装 (暂时不支持chrome)
+### 1. Chrome 插件安装
+1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
+2. 进入chrome扩展程序页面chrome://extensions/
+3. 点击启用右上角开发者模式，刷新当前页面，否则会报错无法安装。
+4. 拖动到Chrome中点击安装
+5. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
+
+### 1. 360浏览器/360极速浏览器 插件安装
 1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
 2. 拖动到以360浏览器/360极速浏览器中点击安装。
 3. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
-
+4. 
 ### 2. 安卓手机/平板 插件安装
 1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上。
 2. 安装[Via浏览器](https://res.viayoo.com/v1/via-release-cn.apk)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
