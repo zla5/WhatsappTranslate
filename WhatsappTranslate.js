@@ -522,7 +522,7 @@ function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerial
                     setTimeout(() => {
                         document.execCommand('insertText', false, text);
                         setTimeout(() => {
-                            const sendBtn = $('[data-icon="send"]');
+                            const sendBtn = $('[data-icon="wds-ic-send-filled"]');
                             if (sendBtn.length) {
                                 sendBtn.click();
                                 console.log('发送按钮已点击');
