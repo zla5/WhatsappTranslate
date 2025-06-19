@@ -746,6 +746,7 @@ inputElement['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073
                 wrapper.style.marginTop = '6px';
                 wrapper.style.fontSize = '14px';
                 wrapper.innerHTML =
+		//如果你要修改译文的显示颜色，将下面的#333修改为其它值，如#999			
                     '<div style="border-top:1px dashed #bbb;margin:4px 0 0 0;padding:4px 0 0 0;white-space:pre-line;color:#333;">' +
                     cached +
                     '</div>';
@@ -764,6 +765,7 @@ inputElement['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073
                         wrapper.style.marginTop = '6px';
                         wrapper.style.fontSize = '14px';
                         wrapper.innerHTML =
+			//如果你要修改译文的显示颜色，将下面的#333修改为其它值，如#999				
                             '<div style="border-top:1px dashed #bbb;margin:4px 0 0 0;padding:4px 0 0 0;white-space:pre-line;color:#333;">' +
                             translatedText +
                             '</div>';
