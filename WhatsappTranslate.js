@@ -1,7 +1,7 @@
 // ==UserScript==
-// @name         WhatsApp自动翻译/显示国家/当地时间
-// @namespace    http://tampermonkey.net/
-// @version      2025/6/10
+// @name         WhatsApp自动翻译/显示国家/当地时间-免费谷歌翻译
+// @namespace    https://raw.githubusercontent.com/zla5/WhatsappTranslate/refs/heads/main/WhatsappTranslate.js
+// @version      2025/6/19
 // @description  根据电话区号查询国家语言和语言代码，显示国家信息和当地时间，支持消息翻译成中文。
 // @author       zla5
 // @match        https://web.whatsapp.com*
@@ -61,16 +61,12 @@
         }
     `);
 
-
-var _0x2aaa0c;let countryInfo={};_0x2aaa0c="kdcomo".split("").reverse().join("");let currentPhoneNumber='';var _0xfc0g2e;let isValidSubscription=false;_0xfc0g2e=730695^730689;let expiresAt=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u0041\u0074");let trialStart=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("tratSlairt".split("").reverse().join(""));var _0x109f=(527412^527420)+(787558^787556);let trialEnd=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0072\u0069\u0061\u006C\u0045\u006E\u0064");_0x109f=(459837^459839)+(113788^113780);if(!trialStart){trialStart=new Date()['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']();localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("tratSlairt".split("").reverse().join(""),trialStart);trialEnd=new Date(new Date(trialStart)['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()+(141143^141136)*(194041^194017)*(670446^670418)*(615415^615371)*(967263^967095))['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']();localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0072\u0069\u0061\u006C\u0045\u006E\u0064",trialEnd);console['\u006C\u006F\u0067'](`首次初始化试用期，trialStart: ${trialStart}`);console['\u006C\u006F\u0067'](`试用结束时间，trialEnd: ${trialEnd}`);}function checkSubscriptionStatus(){const _0x5d648g=new Date();let _0xce1fc=new Date(trialEnd);if(isNaN(_0xce1fc['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']())){console['\u0077\u0061\u0072\u006E']("\u0074\u0072\u0069\u0061\u006C\u0045\u006E\u0064\u0020\u65E0\u6548\uFF0C\u91CD\u7F6E\u4E3A\u9ED8\u8BA4\u503C");trialEnd=new Date(new Date(trialStart)['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()+(599478^599434)*(342314^342722))['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']();localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0072\u0069\u0061\u006C\u0045\u006E\u0064",trialEnd);_0xce1fc=new Date(trialEnd);}console['\u006C\u006F\u0067']("\u8BA2\u9605\u72B6\u6001\u68C0\u67E5\u003A",{'\u0069\u0073\u0056\u0061\u006C\u0069\u0064\u0053\u0075\u0062\u0073\u0063\u0072\u0069\u0070\u0074\u0069\u006F\u006E':isValidSubscription,'\u006E\u006F\u0077':`${_0x5d648g['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']()} (JST: ${_0x5d648g['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("\u006A\u0061\u002D\u004A\u0050",{"timeZone":"\u0041\u0073\u0069\u0061\u002F\u0054\u006F\u006B\u0079\u006F"})})`,"trialStart":`${trialStart} (JST: ${new Date(trialStart)['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("\u006A\u0061\u002D\u004A\u0050",{'\u0074\u0069\u006D\u0065\u005A\u006F\u006E\u0065':"\u0041\u0073\u0069\u0061\u002F\u0054\u006F\u006B\u0079\u006F"})})`,'\u0074\u0072\u0069\u0061\u006C\u0045\u006E\u0064':`${trialEnd} (JST: ${_0xce1fc['\u0074\u006F\u004C\u006F\u0063\u0061\u006C\u0065\u0053\u0074\u0072\u0069\u006E\u0067']("\u006A\u0061\u002D\u004A\u0050",{"timeZone":"\u0041\u0073\u0069\u0061\u002F\u0054\u006F\u006B\u0079\u006F"})})`});if(expiresAt&&new Date(expiresAt)>_0x5d648g){isValidSubscription=!![];}else if(_0x5d648g<_0xce1fc){isValidSubscription=!![];}else{isValidSubscription=false;}return isValidSubscription;}
-function validateSerial(serial,callback){console['\u006C\u006F\u0067']("\u9A8C\u8BC1\u5E8F\u5217\u53F7\u003A",serial);GM_xmlhttpRequest({'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0047\u0045\u0054","url":`https://serial.babyamy.store/validate?serial=${serial}`,"onload":function(response){try{var _0xabd5f=(242311^242309)+(193555^193557);const _0xa5fbfe=JSON['\u0070\u0061\u0072\u0073\u0065'](response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);_0xabd5f=(353274^353278)+(822953^822959);console['\u006C\u006F\u0067']("\u5E8F\u5217\u53F7\u9A8C\u8BC1\u54CD\u5E94\u003A",_0xa5fbfe);if(_0xa5fbfe['\u0073\u0074\u0061\u0074\u0075\u0073']==="\u0076\u0061\u006C\u0069\u0064"&&_0xa5fbfe['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074']){localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("tAseripxe".split("").reverse().join(""),_0xa5fbfe['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074']);localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("laires".split("").reverse().join(""),_0xa5fbfe['\u0073\u0065\u0072\u0069\u0061\u006C']);expiresAt=_0xa5fbfe['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074'];trialEnd=_0xa5fbfe['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074'];localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("dnElairt".split("").reverse().join(""),trialEnd);isValidSubscription=new Date(expiresAt)>new Date();console['\u006C\u006F\u0067']("\u5E8F\u5217\u53F7\u9A8C\u8BC1\u6210\u529F\uFF0C\u8BA2\u9605\u6709\u6548\u81F3\u003A",expiresAt);console['\u006C\u006F\u0067']("\u0074\u0072\u0069\u0061\u006C\u0045\u006E\u0064\u0020\u5DF2\u66F4\u65B0\u4E3A\u003A",trialEnd);callback(!![]);}else{console['\u0077\u0061\u0072\u006E']("\u65E0\u6548\u7684\u5E8F\u5217\u53F7\u54CD\u5E94\u003A",_0xa5fbfe);callback(false);}}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](":\u8D25\u5931\u6790\u89E3\u8BC1\u9A8C\u53F7\u5217\u5E8F".split("").reverse().join(""),e,response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);callback(false);}},'\u006F\u006E\u0065\u0072\u0072\u006F\u0072':function(error){console['\u0065\u0072\u0072\u006F\u0072']("\u5E8F\u5217\u53F7\u9A8C\u8BC1\u8BF7\u6C42\u5931\u8D25\u003A",error);callback(false);}});}
-function showSerialPopup(){var _0x9c28f=(300637^300628)+(208518^208515);const _0x1603a=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("pupop-laires.".split("").reverse().join(""));_0x9c28f=301834^301836;if(_0x1603a)_0x1603a['\u0072\u0065\u006D\u006F\u0076\u0065']();const _0xa8b38f=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("vid".split("").reverse().join(""));_0xa8b38f['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="pupop-laires".split("").reverse().join("");_0xa8b38f['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`
+var _0x41a8e=(966625^966627)+(972738^972741);let countryInfo={};_0x41a8e=380679^380679;let currentPhoneNumber='';let isValidSubscription=false;let expiresAt=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u0041\u0074");var _0x3fged=(822311^822309)+(498825^498816);let trialStart=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0072\u0069\u0061\u006C\u0053\u0074\u0061\u0072\u0074");_0x3fged=706917^706913;var _0x9e_0x24a=(891713^891721)+(750640^750640);let trialEnd=localStorage['\u0067\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0072\u0069\u0061\u006C\u0045\u006E\u0064");_0x9e_0x24a="fnalpp".split("").reverse().join("");if(!trialStart){trialStart=new Date()['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']();localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0074\u0072\u0069\u0061\u006C\u0053\u0074\u0061\u0072\u0074",trialStart);trialEnd=new Date(new Date(trialStart)['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()+(920750^920722)*(587217^587321))['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']();localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("dnElairt".split("").reverse().join(""),trialEnd);}function checkSubscriptionStatus(){const _0x23e=new Date();var _0xc_0x942=(627515^627518)+(389769^389761);let _0xda2ega=new Date(trialEnd);_0xc_0x942=(784733^784729)+(332246^332254);if(isNaN(_0xda2ega['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']())){trialEnd=new Date(new Date(trialStart)['\u0067\u0065\u0074\u0054\u0069\u006D\u0065']()+(818377^818421)*(133189^134061))['\u0074\u006F\u0049\u0053\u004F\u0053\u0074\u0072\u0069\u006E\u0067']();localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("dnElairt".split("").reverse().join(""),trialEnd);_0xda2ega=new Date(trialEnd);}if(expiresAt&&new Date(expiresAt)>_0x23e){isValidSubscription=!![];}else if(_0x23e<_0xda2ega){isValidSubscription=!![];}else{isValidSubscription=false;}return isValidSubscription;}function validateSerial(serial,callback){GM_xmlhttpRequest({"method":"\u0047\u0045\u0054",'\u0075\u0072\u006C':`https://serial.babyamy.store/validate?serial=${serial}`,'\u006F\u006E\u006C\u006F\u0061\u0064':function(response){try{var _0x99ad=(656497^656505)+(583693^583689);const _0x5fcda=JSON['\u0070\u0061\u0072\u0073\u0065'](response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);_0x99ad=798054^798055;if(_0x5fcda['\u0073\u0074\u0061\u0074\u0075\u0073']==="dilav".split("").reverse().join("")&&_0x5fcda['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074']){localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u0041\u0074",_0x5fcda['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074']);localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("laires".split("").reverse().join(""),_0x5fcda['\u0073\u0065\u0072\u0069\u0061\u006C']);expiresAt=_0x5fcda['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074'];trialEnd=_0x5fcda['\u0065\u0078\u0070\u0069\u0072\u0065\u0073\u005F\u0061\u0074'];localStorage['\u0073\u0065\u0074\u0049\u0074\u0065\u006D']("dnElairt".split("").reverse().join(""),trialEnd);isValidSubscription=new Date(expiresAt)>new Date();callback(!![]);}else{console['\u0077\u0061\u0072\u006E']("\u65E0\u6548\u7684\u5E8F\u5217\u53F7\u54CD\u5E94\u003A",_0x5fcda);callback(false);}}catch(e){console['\u0065\u0072\u0072\u006F\u0072'](":\u8D25\u5931\u6790\u89E3\u8BC1\u9A8C\u53F7\u5217\u5E8F".split("").reverse().join(""),e,response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);callback(false);}},'\u006F\u006E\u0065\u0072\u0072\u006F\u0072':function(error){console['\u0065\u0072\u0072\u006F\u0072'](":\u8D25\u5931\u6C42\u8BF7\u8BC1\u9A8C\u53F7\u5217\u5E8F".split("").reverse().join(""),error);callback(false);}});}function showSerialPopup(){var _0xfc_0x461=(990546^990551)+(284050^284055);const _0x7b_0xfaa=document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u002E\u0073\u0065\u0072\u0069\u0061\u006C\u002D\u0070\u006F\u0070\u0075\u0070");_0xfc_0x461=584678^584686;if(_0x7b_0xfaa)_0x7b_0xfaa['\u0072\u0065\u006D\u006F\u0076\u0065']();var _0xfbb;const _0x3da=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("\u0064\u0069\u0076");_0xfbb='\u0067\u0067\u0067\u006A\u0066\u006D';_0x3da['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u0073\u0065\u0072\u0069\u0061\u006C\u002D\u0070\u006F\u0070\u0075\u0070";_0x3da['\u0069\u006E\u006E\u0065\u0072\u0048\u0054\u004D\u004C']=`
             <p style="user-select: text;">您的试用期已经结束，请联系客服续费,微信:zla552200</p><br>
             <p style="user-select: text;">✨✨套餐:1年19元,2年35元✨✨</p>
             <input type="text" id="serialInput" placeholder="请输入序列号">
             <button id="submitSerial">提交</button>
-        `;document['\u0062\u006F\u0064\u0079']['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0xa8b38f);_0xa8b38f['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("nwodesuom".split("").reverse().join(""),event=>{if(event['\u0074\u0061\u0072\u0067\u0065\u0074']['\u0074\u0061\u0067\u004E\u0061\u006D\u0065']==="\u0050"){event['\u0073\u0074\u006F\u0070\u0050\u0072\u006F\u0070\u0061\u0067\u0061\u0074\u0069\u006F\u006E']();}});var _0x2e_0x9c9=(237526^237534)+(121397^121396);const _0xbg4e7d=_0xa8b38f['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u0023\u0073\u0075\u0062\u006D\u0069\u0074\u0053\u0065\u0072\u0069\u0061\u006C");_0x2e_0x9c9=(334528^334530)+(813830^813831);const _0xa7b1db=_0xa8b38f['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u0023\u0073\u0065\u0072\u0069\u0061\u006C\u0049\u006E\u0070\u0075\u0074");_0xbg4e7d['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("kcilc".split("").reverse().join(""),()=>{const _0x8a2c0c=_0xa7b1db['\u0076\u0061\u006C\u0075\u0065']['\u0074\u0072\u0069\u006D']();if(_0x8a2c0c){validateSerial(_0x8a2c0c,isValid=>{if(isValid){_0xa8b38f['\u0072\u0065\u006D\u006F\u0076\u0065']();console['\u006C\u006F\u0067']("\u5E8F\u5217\u53F7\u9A8C\u8BC1\u6210\u529F");}else{alert("\u65E0\u6548\u7684\u5E8F\u5217\u53F7\uFF0C\u8BF7\u8054\u7CFB\u5BA2\u670D\u83B7\u53D6\u6709\u6548\u5E8F\u5217\u53F7");}});}else{alert("\u8BF7\u8F93\u5165\u5E8F\u5217\u53F7");}});}
-function refreshTranslateButtons(){console['\u006C\u006F\u0067']("\u5237\u65B0\u7FFB\u8BD1\u6309\u94AE\uFF0C\u5F53\u524D\u8BA2\u9605\u72B6\u6001\u003A",isValidSubscription);document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u002E\u0074\u0072\u0061\u006E\u0073\u006C\u0061\u0074\u0065\u002D\u0062\u0074\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](btn=>btn['\u0072\u0065\u006D\u006F\u0076\u0065']());addTranslateButtons();}checkSubscriptionStatus();
+        `;document['\u0062\u006F\u0064\u0079']['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0x3da);_0x3da['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u006D\u006F\u0075\u0073\u0065\u0064\u006F\u0077\u006E",event=>{if(event['\u0074\u0061\u0072\u0067\u0065\u0074']['\u0074\u0061\u0067\u004E\u0061\u006D\u0065']==="\u0050"){event['\u0073\u0074\u006F\u0070\u0050\u0072\u006F\u0070\u0061\u0067\u0061\u0074\u0069\u006F\u006E']();}});const _0x2801af=_0x3da['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("laireStimbus#".split("").reverse().join(""));const _0x1819de=_0x3da['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("tupnIlaires#".split("").reverse().join(""));_0x2801af['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u0063\u006C\u0069\u0063\u006B",()=>{var _0x_0x900=(649931^649935)+(361533^361534);const _0xfdgb9d=_0x1819de['\u0076\u0061\u006C\u0075\u0065']['\u0074\u0072\u0069\u006D']();_0x_0x900=867306^867310;if(_0xfdgb9d){validateSerial(_0xfdgb9d,isValid=>{if(isValid){_0x3da['\u0072\u0065\u006D\u006F\u0076\u0065']();console['\u006C\u006F\u0067']("\u529F\u6210\u8BC1\u9A8C\u53F7\u5217\u5E8F".split("").reverse().join(""));}else{alert("\u65E0\u6548\u7684\u5E8F\u5217\u53F7\uFF0C\u8BF7\u8054\u7CFB\u5BA2\u670D\u83B7\u53D6\u6709\u6548\u5E8F\u5217\u53F7");}});}else{alert("\u8BF7\u8F93\u5165\u5E8F\u5217\u53F7");}});}function refreshTranslateButtons(){console['\u006C\u006F\u0067'](":\u6001\u72B6\u9605\u8BA2\u524D\u5F53\uFF0C\u94AE\u6309\u8BD1\u7FFB\u65B0\u5237".split("").reverse().join(""),isValidSubscription);document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u002E\u0074\u0072\u0061\u006E\u0073\u006C\u0061\u0074\u0065\u002D\u0062\u0074\u006E")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](btn=>btn['\u0072\u0065\u006D\u006F\u0076\u0065']());addTranslateButtons();}checkSubscriptionStatus();
 
     // 区号到语言和时区的映射（简化，仅包含部分示例）
     const areaCodeToCountry = {
@@ -291,11 +287,7 @@ function refreshTranslateButtons(){console['\u006C\u006F\u0067']("\u5237\u65B0\u
     '+263': { language: '津巴布韦(Zimbabwe)-英语、绍纳语、辛德贝勒语(English/Shona/Ndebele)', timeZone: 'Africa/Harare', id: 'en', currency: 'ZWL' } // 津巴布韦元
     };
 
-    // 全局翻译函数
-function translate(sl,dl,txt,cb){if(!checkSubscriptionStatus()){console['\u006C\u006F\u0067']("\u7FFB\u8BD1\u88AB\u963B\u6B62\uFF0C\u663E\u793A\u5E8F\u5217\u53F7\u5F39\u7A97");showSerialPopup();cb(null);return;}console['\u006C\u006F\u0067'](`翻译请求: 源语言=${sl}, 目标语言=${dl}, 文本=${txt}`);GM_xmlhttpRequest({"method":"\u0047\u0045\u0054",'\u0075\u0072\u006C':`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sl}&tl=${dl}&dt=t&q=${encodeURI(txt)}`,"onload":response=>{try{var _0x13bb8b;const _0x4f32bb=response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\".split("").reverse().join(""),'\u0067'),'');_0x13bb8b=681266^681270;const _0x126a4b=JSON['\u0070\u0061\u0072\u0073\u0065'](_0x4f32bb);var _0x6e664f=(570685^570687)+(582747^582744);let _0x57f='';_0x6e664f=(799039^799038)+(844580^844576);for(let i=951367^951367;i<_0x126a4b[467302^467302]['\u006C\u0065\u006E\u0067\u0074\u0068'];i++){_0x57f+=_0x126a4b[862093^862093][i][458305^458305];}var _0xb_0x82b=(898822^898818)+(848989^848987);const _0x_0x35d=_0x126a4b[759950^759948];_0xb_0x82b='\u006D\u006A\u0063\u006C\u0065\u006A';console['\u006C\u006F\u0067'](`翻译结果: ${_0x57f}`);cb(_0x57f,_0x_0x35d);}catch(e){console['\u0065\u0072\u0072\u006F\u0072']("\u7FFB\u8BD1\u54CD\u5E94\u89E3\u6790\u5931\u8D25\u003A",e,response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);cb(null);}},"onerror":error=>{console['\u0065\u0072\u0072\u006F\u0072'](":\u8D25\u5931\u6C42\u8BF7\u8BD1\u7FFB".split("").reverse().join(""),error);cb(null);}});}
-
-    // 全局语言检测函数
-function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerialPopup();callback("\u0065\u006E");return;}console['\u006C\u006F\u0067']("\u68C0\u6D4B\u8BED\u8A00\u003A",text);GM_xmlhttpRequest({"method":"\u0047\u0045\u0054",'\u0075\u0072\u006C':`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=${encodeURI(text)}`,'\u006F\u006E\u006C\u006F\u0061\u0064':response=>{try{var _0x591ce;const _0x97b=response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp('\u005C\u006E','\u0067'),'');_0x591ce=798286^798280;var _0x6cf5b;const _0xae_0x0cg=JSON['\u0070\u0061\u0072\u0073\u0065'](_0x97b);_0x6cf5b=(796396^796395)+(214415^214411);var _0xg8dbg=(940583^940576)+(769889^769895);const _0x5edf=_0xae_0x0cg[217136^217138];_0xg8dbg='\u0066\u0067\u0064\u0068\u0068\u006F';console['\u006C\u006F\u0067'](":\u679C\u7ED3\u6D4B\u68C0\u8A00\u8BED".split("").reverse().join(""),_0x5edf);callback(_0x5edf);}catch(e){console['\u0065\u0072\u0072\u006F\u0072']("\u8BED\u8A00\u68C0\u6D4B\u89E3\u6790\u5931\u8D25\u003A",e,response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);callback("ne".split("").reverse().join(""));}},"onerror":error=>{console['\u0077\u0061\u0072\u006E']("\u8BED\u8A00\u68C0\u6D4B\u8BF7\u6C42\u5931\u8D25\uFF0C\u9ED8\u8BA4\u4F7F\u7528\u82F1\u8BED\u003A",error);callback("ne".split("").reverse().join(""));}});}
+function translate(sl,dl,txt,cb){if(!checkSubscriptionStatus()){showSerialPopup();cb(null);return;}console['\u006C\u006F\u0067'](`翻译请求: 源语言=${sl}, 目标语言=${dl}, 文本=${txt}`);GM_xmlhttpRequest({'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0047\u0045\u0054",'\u0075\u0072\u006C':`https://translate.googleapis.com/translate_a/single?client=gtx&sl=${sl}&tl=${dl}&dt=t&q=${encodeURI(txt)}`,"onload":response=>{try{var _0x2b1f;const _0x0aa26f=response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\".split("").reverse().join(""),'\u0067'),'');_0x2b1f=549779^549782;const _0x0843cf=JSON['\u0070\u0061\u0072\u0073\u0065'](_0x0aa26f);var _0x38e5ee=(986351^986350)+(974983^974982);let _0xf4809f='';_0x38e5ee=(832481^832488)+(153749^153756);for(let i=898828^898828;i<_0x0843cf[915042^915042]['\u006C\u0065\u006E\u0067\u0074\u0068'];i++){_0xf4809f+=_0x0843cf[574776^574776][i][267710^267710];}const _0x8f9ff=_0x0843cf[578929^578931];console['\u006C\u006F\u0067'](`翻译结果: ${_0xf4809f}`);cb(_0xf4809f,_0x8f9ff);}catch(e){console['\u0065\u0072\u0072\u006F\u0072']("\u7FFB\u8BD1\u54CD\u5E94\u89E3\u6790\u5931\u8D25\u003A",e,response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);cb(null);}},'\u006F\u006E\u0065\u0072\u0072\u006F\u0072':error=>{console['\u0065\u0072\u0072\u006F\u0072']("\u7FFB\u8BD1\u8BF7\u6C42\u5931\u8D25\u003A",error);cb(null);}});}function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerialPopup();callback("\u0065\u006E");return;}console['\u006C\u006F\u0067'](":\u8A00\u8BED\u6D4B\u68C0".split("").reverse().join(""),text);GM_xmlhttpRequest({'\u006D\u0065\u0074\u0068\u006F\u0064':"\u0047\u0045\u0054","url":`https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=en&dt=t&q=${encodeURI(text)}`,'\u006F\u006E\u006C\u006F\u0061\u0064':response=>{try{var _0xc8afa;const _0x_0x7de=response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']['\u0072\u0065\u0070\u006C\u0061\u0063\u0065'](new RegExp("n\\".split("").reverse().join(""),'\u0067'),'');_0xc8afa=(151268^151266)+(356425^356425);const _0x8e762c=JSON['\u0070\u0061\u0072\u0073\u0065'](_0x_0x7de);var _0xea_0xgdb=(387064^387066)+(687622^687620);const _0x6b_0xc79=_0x8e762c[192020^192022];_0xea_0xgdb=900102^900111;console['\u006C\u006F\u0067']("\u8BED\u8A00\u68C0\u6D4B\u7ED3\u679C\u003A",_0x6b_0xc79);callback(_0x6b_0xc79);}catch(e){console['\u0065\u0072\u0072\u006F\u0072']("\u8BED\u8A00\u68C0\u6D4B\u89E3\u6790\u5931\u8D25\u003A",e,response['\u0072\u0065\u0073\u0070\u006F\u006E\u0073\u0065\u0054\u0065\u0078\u0074']);callback("ne".split("").reverse().join(""));}},'\u006F\u006E\u0065\u0072\u0072\u006F\u0072':error=>{console['\u0077\u0061\u0072\u006E']("\u8BED\u8A00\u68C0\u6D4B\u8BF7\u6C42\u5931\u8D25\uFF0C\u9ED8\u8BA4\u4F7F\u7528\u82F1\u8BED\u003A",error);callback("\u0065\u006E");}});}
 
     // 添加电话号码输入框
     const targetClass = '#side';
@@ -459,21 +451,67 @@ function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerial
         langSelect.style.border = '1px solid #767676';
 
         const languageOptions = [
+            { value: 'auto', text: '自动检测语言' },
             { value: 'en', text: '英语 (English)' },
-            { value: 'ru', text: '俄语 (Russian)' },
-            { value: 'he', text: '希伯来语 (Hebrew)' },
+            { value: 'zh', text: '中文 (Chinese)' },
             { value: 'es', text: '西班牙语 (Spanish)' },
-            { value: 'fr', text: '法语 (French)' },
-            { value: 'de', text: '德语 (German)' },
-            { value: 'ja', text: '日语 (Japanese)' },
-            { value: 'ko', text: '韩语 (Korean)' },
+            { value: 'hi', text: '印地语 (Hindi)' },
             { value: 'ar', text: '阿拉伯语 (Arabic)' },
             { value: 'pt', text: '葡萄牙语 (Portuguese)' },
+            { value: 'bn', text: '孟加拉语 (Bengali)' },
+            { value: 'ru', text: '俄语 (Russian)' },
+            { value: 'ja', text: '日语 (Japanese)' },
+            { value: 'de', text: '德语 (German)' },
+            { value: 'fr', text: '法语 (French)' },
+            { value: 'id', text: '印尼语 (Indonesian)' },
+            { value: 'ms', text: '马来语 (Malay)' },
+            { value: 'ur', text: '乌尔都语 (Urdu)' },
+            { value: 'vi', text: '越南语 (Vietnamese)' },
+            { value: 'ko', text: '韩语 (Korean)' },
+            { value: 'tr', text: '土耳其语 (Turkish)' },
             { value: 'it', text: '意大利语 (Italian)' },
-            { value: 'nl', text: '荷兰语 (Dutch)' },
-            { value: 'sv', text: '瑞典语 (Swedish)' },
+            { value: 'fa', text: '波斯语 (Persian)' },
+            { value: 'th', text: '泰语 (Thai)' },
             { value: 'pl', text: '波兰语 (Polish)' },
-            { value: 'auto', text: '自动检测语言' }
+            { value: 'uk', text: '乌克兰语 (Ukrainian)' },
+            { value: 'nl', text: '荷兰语 (Dutch)' },
+            { value: 'ro', text: '罗马尼亚语 (Romanian)' },
+            { value: 'sv', text: '瑞典语 (Swedish)' },
+            { value: 'cs', text: '捷克语 (Czech)' },
+            { value: 'el', text: '希腊语 (Greek)' },
+            { value: 'he', text: '希伯来语 (Hebrew)' },
+            { value: 'hu', text: '匈牙利语 (Hungarian)' },
+            { value: 'fi', text: '芬兰语 (Finnish)' },
+            { value: 'no', text: '挪威语 (Norwegian)' },
+            { value: 'da', text: '丹麦语 (Danish)' },
+            { value: 'sk', text: '斯洛伐克语 (Slovak)' },
+            { value: 'sl', text: '斯洛文尼亚语 (Slovenian)' },
+            { value: 'hr', text: '克罗地亚语 (Croatian)' },
+            { value: 'bg', text: '保加利亚语 (Bulgarian)' },
+            { value: 'lt', text: '立陶宛语 (Lithuanian)' },
+            { value: 'sr', text: '塞尔维亚语 (Serbian)' },
+            { value: 'et', text: '爱沙尼亚语 (Estonian)' },
+            { value: 'ta', text: '泰米尔语 (Tamil)' },
+            { value: 'te', text: '泰卢固语 (Telugu)' },
+            { value: 'ml', text: '马拉雅拉姆语 (Malayalam)' },
+            { value: 'kn', text: '卡纳达语 (Kannada)' },
+            { value: 'mr', text: '马拉地语 (Marathi)' },
+            { value: 'gu', text: '古吉拉特语 (Gujarati)' },
+            { value: 'pa', text: '旁遮普语 (Punjabi)' },
+            { value: 'am', text: '阿姆哈拉语 (Amharic)' },
+            { value: 'my', text: '缅甸语 (Burmese)' },
+            { value: 'km', text: '高棉语 (Khmer)' },
+            { value: 'lo', text: '老挝语 (Lao)' },
+            { value: 'si', text: '僧伽罗语 (Sinhala)' },
+            { value: 'ne', text: '尼泊尔语 (Nepali)' },
+            { value: 'mn', text: '蒙古语 (Mongolian)' },
+            { value: 'hy', text: '亚美尼亚语 (Armenian)' },
+            { value: 'ka', text: '格鲁吉亚语 (Georgian)' },
+            { value: 'az', text: '阿塞拜疆语 (Azerbaijani)' },
+            { value: 'kk', text: '哈萨克语 (Kazakh)' },
+            { value: 'uz', text: '乌兹别克语 (Uzbek)' },
+            { value: 'tg', text: '塔吉克语 (Tajik)' },
+            { value: 'ps', text: '普什图语 (Pashto)' }
         ];
 
         languageOptions.forEach((option) => {
@@ -494,7 +532,6 @@ function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerial
 
         sendButton.addEventListener('click', () => {
             if (!checkSubscriptionStatus()) {
-                console.log('发送按钮被阻止，显示序列号弹窗');
                 showSerialPopup();
                 return;
             }
@@ -522,7 +559,7 @@ function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerial
                     setTimeout(() => {
                         document.execCommand('insertText', false, text);
                         setTimeout(() => {
-                            const sendBtn = $('[data-icon="wds-ic-send-filled"]');
+							const sendBtn = $('[data-icon="wds-ic-send-filled"]');
                             if (sendBtn.length) {
                                 sendBtn.click();
                                 console.log('发送按钮已点击');
@@ -585,19 +622,10 @@ function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerial
             }
         }
 
-        inputElement.addEventListener('keydown', (event) => {
-            if (event.key === 'Enter' && !event.shiftKey && !event.ctrlKey && !event.altKey) {
-                if (!checkSubscriptionStatus()) {
-
-                    showSerialPopup();
-                    return;
-                }
-                handleTranslation();
-            }
-        });
+inputElement['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("\u006B\u0065\u0079\u0064\u006F\u0077\u006E",event=>{if(event['\u006B\u0065\u0079']==="retnE".split("").reverse().join("")&&!event['\u0073\u0068\u0069\u0066\u0074\u004B\u0065\u0079']&&!event['\u0063\u0074\u0072\u006C\u004B\u0065\u0079']&&!event['\u0061\u006C\u0074\u004B\u0065\u0079']){if(!checkSubscriptionStatus()){showSerialPopup();return;}handleTranslation();}});
 
         const commonPhrases = [
-            '您好！感谢通过我们网站添加我为联系人！我是Nala。很高兴和您在这里联系！请问有什么我可以帮忙的吗？😊',
+            '您好！感谢加我为联系人！我是Nala。很高兴和您在这里联系！请问有什么我可以帮忙的吗？😊',
             '这款产品有库存，您可以下单。',
             '您对哪款产品感兴趣？请给我一个链接。',
             '你好，页面上显示了它的价格和运费成本。',
@@ -638,11 +666,118 @@ function detectLanguage(text,callback){if(!checkSubscriptionStatus()){showSerial
         footerElement.appendChild(phraseList);
     }
 
-    // 添加聊天消息翻译按钮
-function addTranslateButtons(){console['\u006C\u006F\u0067']("\u6DFB\u52A0\u7FFB\u8BD1\u6309\u94AE\uFF0C\u5F53\u524D\u8BA2\u9605\u72B6\u6001\u003A",isValidSubscription);document['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072\u0041\u006C\u006C']("\u0064\u0069\u0076\u002E\u005F\u0061\u006D\u006B\u0036\u002E\u005F\u0061\u006D\u006C\u006F")['\u0066\u006F\u0072\u0045\u0061\u0063\u0068'](msg=>{var _0x9g735f=(415659^415663)+(248175^248167);const _0x5ef2gc=msg['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("\u0073\u0070\u0061\u006E\u002E\u005F\u0061\u006F\u0033\u0065\u002E\u0073\u0065\u006C\u0065\u0063\u0074\u0061\u0062\u006C\u0065\u002D\u0074\u0065\u0078\u0074\u002E\u0063\u006F\u0070\u0079\u0061\u0062\u006C\u0065\u002D\u0074\u0065\u0078\u0074");_0x9g735f=(677582^677577)+(150120^150122);if(_0x5ef2gc&&!msg['\u0071\u0075\u0065\u0072\u0079\u0053\u0065\u006C\u0065\u0063\u0074\u006F\u0072']("ntb-etalsnart.".split("").reverse().join(""))){var _0x84ec2f=(947673^947679)+(423943^423942);const _0xf6ffde=document['\u0063\u0072\u0065\u0061\u0074\u0065\u0045\u006C\u0065\u006D\u0065\u006E\u0074']("nottub".split("").reverse().join(""));_0x84ec2f=(361230^361226)+(400256^400261);_0xf6ffde['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']="\u7FFB\u8BD1";_0xf6ffde['\u0063\u006C\u0061\u0073\u0073\u004E\u0061\u006D\u0065']="\u0074\u0072\u0061\u006E\u0073\u006C\u0061\u0074\u0065\u002D\u0062\u0074\u006E";_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u006D\u0061\u0072\u0067\u0069\u006E\u004C\u0065\u0066\u0074']="xp01".split("").reverse().join("");_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0063\u0075\u0072\u0073\u006F\u0072']="\u0070\u006F\u0069\u006E\u0074\u0065\u0072";_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="\u0023\u0031\u0032\u0038\u0043\u0037\u0045";_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0063\u006F\u006C\u006F\u0072']="\u0077\u0068\u0069\u0074\u0065";_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072']="\u006E\u006F\u006E\u0065";_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0070\u0061\u0064\u0064\u0069\u006E\u0067']="xp21 xp0".split("").reverse().join("");_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0062\u006F\u0072\u0064\u0065\u0072\u0052\u0061\u0064\u0069\u0075\u0073']="\u0035\u0070\u0078";_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0074\u0072\u0061\u006E\u0073\u0069\u0074\u0069\u006F\u006E']="esae s2.0 dnuorgkcab".split("").reverse().join("");_0xf6ffde['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("nwodesuom".split("").reverse().join(""),()=>{if(isValidSubscription){_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']=")56 27 9(bgr".split("").reverse().join("");}});_0xf6ffde['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("puesuom".split("").reverse().join(""),()=>{if(isValidSubscription){_0xf6ffde['\u0073\u0074\u0079\u006C\u0065']['\u0062\u0061\u0063\u006B\u0067\u0072\u006F\u0075\u006E\u0064']="E7C821#".split("").reverse().join("");}});_0xf6ffde['\u0061\u0064\u0064\u0045\u0076\u0065\u006E\u0074\u004C\u0069\u0073\u0074\u0065\u006E\u0065\u0072']("kcilc".split("").reverse().join(""),()=>{if(!checkSubscriptionStatus()){console['\u006C\u006F\u0067']("\u7A97\u5F39\u53F7\u5217\u5E8F\u793A\u663E\uFF0C\u6548\u65E0\u9605\u8BA2".split("").reverse().join(""));showSerialPopup();return;}const _0x1896e=_0x5ef2gc['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074'];if(!_0x1896e){console['\u0077\u0061\u0072\u006E']("\u65E0\u6587\u672C\u53EF\u7FFB\u8BD1");return;}detectLanguage(_0x1896e,detectedLang=>{console['\u006C\u006F\u0067']("\u68C0\u6D4B\u5230\u8BED\u8A00\u003A",detectedLang);translate(detectedLang,"\u007A\u0068\u002D\u0043\u004E",_0x1896e,translatedText=>{if(translatedText){_0x5ef2gc['\u0069\u006E\u006E\u0065\u0072\u0054\u0065\u0078\u0074']=translatedText;console['\u006C\u006F\u0067']("\u7FFB\u8BD1\u6210\u529F\u003A",translatedText);}else{console['\u0065\u0072\u0072\u006F\u0072']("\u679C\u7ED3\u8BD1\u7FFB\u6548\u6709\u5230\u6536\u672A\uFF0C\u8D25\u5931\u8BD1\u7FFB".split("").reverse().join(""));}});});});msg['\u0061\u0070\u0070\u0065\u006E\u0064\u0043\u0068\u0069\u006C\u0064'](_0xf6ffde);}});}
+    // IndexedDB缓存实现
+    const DB_NAME = 'wa_translate_db';
+    const DB_STORE = 'msg_cache';
+    const DB_VERSION = 1;
+    let dbInstance = null;
 
-    // 定期更新翻译按钮
+    function openDB() {
+        return new Promise((resolve, reject) => {
+            if (dbInstance) return resolve(dbInstance);
+            const request = indexedDB.open(DB_NAME, DB_VERSION);
+            request.onerror = (e) => reject(e);
+            request.onsuccess = (e) => {
+                dbInstance = e.target.result;
+                resolve(dbInstance);
+            };
+            request.onupgradeneeded = (e) => {
+                const db = e.target.result;
+                if (!db.objectStoreNames.contains(DB_STORE)) {
+                    db.createObjectStore(DB_STORE);
+                }
+            };
+        });
+    }
+
+    function getMsgCacheKey(text) {
+        return 'wa_translate_cache_' + btoa(unescape(encodeURIComponent(text)));
+    }
+
+    async function getCache(key) {
+        const db = await openDB();
+        return new Promise((resolve) => {
+            const tx = db.transaction([DB_STORE], 'readonly');
+            const store = tx.objectStore(DB_STORE);
+            const req = store.get(key);
+            req.onsuccess = () => resolve(req.result);
+            req.onerror = () => resolve(undefined);
+        });
+    }
+
+    async function setCache(key, value) {
+        const db = await openDB();
+        return new Promise((resolve) => {
+            const tx = db.transaction([DB_STORE], 'readwrite');
+            const store = tx.objectStore(DB_STORE);
+            const req = store.put(value, key);
+            req.onsuccess = () => resolve();
+            req.onerror = () => resolve();
+        });
+    }
+
+    function isElementInViewport(el) {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    function translateVisibleMessages() {
+        document.querySelectorAll('div._amk6._amlo').forEach(async (msg) => {
+            const textElement = msg.querySelector('span._ao3e.selectable-text.copyable-text');
+            if (!textElement) return;
+            if (msg.querySelector('.translated-text')) return;
+            if (msg.getAttribute('data-translated') === '1') return;
+            if (!isElementInViewport(msg)) return;
+            const originalText = textElement.innerText;
+            if (!originalText) return;
+            msg.setAttribute('data-translated', '1');
+
+            // 检查IndexedDB缓存
+            const cacheKey = getMsgCacheKey(originalText);
+            const cached = await getCache(cacheKey);
+            if (cached) {
+                const wrapper = document.createElement('div');
+                wrapper.className = 'translated-text';
+                wrapper.style.marginTop = '6px';
+                wrapper.style.fontSize = '14px';
+                wrapper.innerHTML =
+                    '<div style="border-top:1px dashed #bbb;margin:4px 0 0 0;padding:4px 0 0 0;white-space:pre-line;color:#333;">' +
+                    cached +
+                    '</div>';
+                if (textElement.parentNode) {
+                    textElement.parentNode.appendChild(wrapper);
+                }
+                return;
+            }
+
+            detectLanguage(originalText, (detectedLang) => {
+                translate(detectedLang, 'zh-CN', originalText, async (translatedText) => {
+                    if (translatedText) {
+                        await setCache(cacheKey, translatedText);
+                        const wrapper = document.createElement('div');
+                        wrapper.className = 'translated-text';
+                        wrapper.style.marginTop = '6px';
+                        wrapper.style.fontSize = '14px';
+                        wrapper.innerHTML =
+                            '<div style="border-top:1px dashed #bbb;margin:4px 0 0 0;padding:4px 0 0 0;white-space:pre-line;color:#333;">' +
+                            translatedText +
+                            '</div>';
+                        if (textElement.parentNode) {
+                            textElement.parentNode.appendChild(wrapper);
+                        }
+                    }
+                });
+            });
+        });
+    }
+
+    // 定期只翻译可见区域的消息
     setInterval(() => {
-        addTranslateButtons();
-    }, 1000);
+        translateVisibleMessages();
+    }, 500);
 })();
