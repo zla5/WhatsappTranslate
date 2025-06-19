@@ -37,6 +37,7 @@
 1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上，看视频 https://youtube.com/shorts/6FUX2mCjCXs?feature=share
 2. 安装[Via浏览器](https://res.viayoo.com/v1/via-release-cn.apk)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
 3. 使用Via浏览器打开 [WhatsApp Web](https://web.whatsapp.com/)，会提示“通过你的电脑上的浏览器访问”，解决办法，打开Via浏览器-设置-通用-网站设定-所有网站-添加+号，新建一个web.whatsapp.com,点击确定，然后启用这个设定，将标识设置为“Windows(chrome)”,电脑模式打开，返回Via浏览器，访问https://web.whatsapp.com，就能正常使用脚本将自动加载并显示自定义界面。
+4. 
 
    
    
