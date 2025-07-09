@@ -43,7 +43,7 @@
 2. 拖动到以360浏览器/360极速浏览器中点击安装。
 3. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 
-### 3. Chrome 插件安装方法(已经无法在最新版本chrome中安装)
+### 3. Chrome 插件安装方法(已经无法在最新版本chrome中安装，如果你仍然想在chrome中使用它，请按照第1种方法安装)
 1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
 2. 进入chrome扩展程序页面chrome://extensions/
 3. 点击启用右上角开发者模式，刷新当前页面，否则会报错“程序包无效”无法安装。
