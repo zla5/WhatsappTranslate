@@ -20,30 +20,7 @@
 ![输入文字自动翻译演示](https://github.com/zla5/WhatsappTranslate/blob/edee77a23dc79349c8ab68623c2f014ddc5ac6ae/%E8%BE%93%E5%85%A5%E6%96%87%E5%AD%97%E8%87%AA%E5%8A%A8%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
 
 ## 安装方法
-
-### 1. Chrome 插件安装方法
-1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
-2. 进入chrome扩展程序页面chrome://extensions/
-3. 点击启用右上角开发者模式，刷新当前页面，否则会报错“程序包无效”无法安装。
-4. 拖动到Chrome中点击安装
-5. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
-
-### 1. 360浏览器/360极速浏览器 插件安装方法
-1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
-2. 拖动到以360浏览器/360极速浏览器中点击安装。
-3. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
-4. 
-### 2. 安卓手机/平板 插件安装方法
-1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上，看视频 https://youtube.com/shorts/6FUX2mCjCXs?feature=share
-2. 安装[Via浏览器](https://res.viayoo.com/v1/via-release-cn.apk)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
-3. 使用Via浏览器打开 [WhatsApp Web](https://web.whatsapp.com/)，会提示“通过你的电脑上的浏览器访问”，解决办法，打开Via浏览器→设置→通用→网站设定→所有网站→点击+号，新建一个web.whatsapp.com,点击确定，然后启用这个设定，将标识设置为“Windows(chrome)”,电脑模式打开，返回Via浏览器，访问 [WhatsApp Web](https://web.whatsapp.com/)，和网页版一样扫码就可以登陆WhatsAPP(如果本台手机不方便扫码，可以使用另一台手机将二维码拍照，然后扫描拍下的照片), 开始使用吧。
-
-
-   
-   
-![via浏览器演示](https://github.com/zla5/WhatsappTranslate/blob/bbab064b8ba93436bffb8520d8c1642f672f1342/%E6%89%8B%E6%9C%BAvia%E6%B5%8F%E8%A7%88%E5%99%A8%E6%BC%94%E7%A4%BA.jpg)
-
-### 3. Tampermonkey 脚本安装方法
+### 1. Tampermonkey 脚本安装方法
 > 适合电脑用户。
 
 1. **浏览器安装 Tampermonkey**：
@@ -59,6 +36,36 @@
 
 3. **运行脚本**：
    - 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
+     
+### 2. 360浏览器/360极速浏览器 插件安装方法
+1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
+2. 拖动到以360浏览器/360极速浏览器中点击安装。
+3. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
+
+### 3. Chrome 插件安装方法(已经无法在最新版本chrome中安装)
+1. 下载本仓库中的 `WhatsAppTranslator.crx` 文件。
+2. 进入chrome扩展程序页面chrome://extensions/
+3. 点击启用右上角开发者模式，刷新当前页面，否则会报错“程序包无效”无法安装。
+4. 拖动到Chrome中点击安装,安装成功后显示Chrome 无法验证此扩展程序的来源，点击后面的3个小点，选择保留此扩展。
+5. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
+
+
+
+### 4. 安卓手机/平板 插件安装方法
+1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上，看视频 https://youtube.com/shorts/6FUX2mCjCXs?feature=share
+2. 安装[Via浏览器](https://res.viayoo.com/v1/via-release-cn.apk)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
+3. 使用Via浏览器打开 [WhatsApp Web](https://web.whatsapp.com/)，会提示“通过你的电脑上的浏览器访问”，解决办法，打开Via浏览器→设置→通用→网站设定→所有网站→点击+号，新建一个web.whatsapp.com,点击确定，然后启用这个设定，将标识设置为“Windows(chrome)”,电脑模式打开，返回Via浏览器，访问 [WhatsApp Web](https://web.whatsapp.com/)，和网页版一样扫码就可以登陆WhatsAPP(如果本台手机不方便扫码，可以使用另一台手机将二维码拍照，然后扫描拍下的照片), 开始使用吧。
+
+### 5. 苹果手机/平板 插件安装方法
+1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上
+2. 安装[Via浏览器](https://apps.apple.com/us/app/via-browser/id1639085829)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
+3. 使用Via浏览器打开 [WhatsApp Web](https://web.whatsapp.com/)，会提示“通过你的电脑上的浏览器访问”，解决办法，打开Via浏览器→设置→通用→网站设定→所有网站→点击+号，新建一个web.whatsapp.com,点击确定，然后启用这个设定，将标识设置为“Windows(chrome)”,电脑模式打开，返回Via浏览器，访问 [WhatsApp Web](https://web.whatsapp.com/)，和网页版一样扫码就可以登陆WhatsAPP(如果本台手机不方便扫码，可以使用另一台手机将二维码拍照，然后扫描拍下的照片), 开始使用吧。
+
+   
+   
+![via浏览器演示](https://github.com/zla5/WhatsappTranslate/blob/bbab064b8ba93436bffb8520d8c1642f672f1342/%E6%89%8B%E6%9C%BAvia%E6%B5%8F%E8%A7%88%E5%99%A8%E6%BC%94%E7%A4%BA.jpg)
+
+
 
 ## 使用方法
 
