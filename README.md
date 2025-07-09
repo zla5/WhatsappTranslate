@@ -58,8 +58,8 @@
 3. 使用Via浏览器打开 [WhatsApp Web](https://web.whatsapp.com/)，会提示“通过你的电脑上的浏览器访问”，解决办法，打开Via浏览器→设置→通用→网站设定→所有网站→点击+号，新建一个web.whatsapp.com,点击确定，然后启用这个设定，将标识设置为“Windows(chrome)”,电脑模式打开，返回Via浏览器，访问 [WhatsApp Web](https://web.whatsapp.com/)，和网页版一样扫码就可以登陆WhatsAPP(如果本台手机不方便扫码，可以使用另一台手机将二维码拍照，然后扫描拍下的照片), 开始使用吧。
 
 ### 5. 苹果手机/平板 插件安装方法
-1. 下载本仓库中的 `WhatsAppTranslate.js` 文件到手机上
-2. 安装[Via浏览器](https://apps.apple.com/us/app/via-browser/id1639085829)，然后在Via浏览器的设置-脚本中点击"+"号导入，找到这个脚本导入即可。
+1. 复制本仓库中的 `WhatsAppTranslate.js` 文件中的代码。
+2. 安装[Via浏览器](https://apps.apple.com/us/app/via-browser/id1639085829)，然后在Via浏览器的设置-脚本中点击"+"号，点击添加脚本，将删除里面所有代码，然后粘贴复制的代码，点击保存。
 3. 使用Via浏览器打开 [WhatsApp Web](https://web.whatsapp.com/)，会提示“通过你的电脑上的浏览器访问”，解决办法，打开Via浏览器→设置→通用→网站设定→所有网站→点击+号，新建一个web.whatsapp.com,点击确定，然后启用这个设定，将标识设置为“Windows(chrome)”,电脑模式打开，返回Via浏览器，访问 [WhatsApp Web](https://web.whatsapp.com/)，和网页版一样扫码就可以登陆WhatsAPP(如果本台手机不方便扫码，可以使用另一台手机将二维码拍照，然后扫描拍下的照片), 开始使用吧。
 
    
