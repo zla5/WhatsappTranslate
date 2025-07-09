@@ -31,7 +31,7 @@
 
 2. **Tampermonkey添加脚本**：
    - 点击 Tampermonkey 图标，选择“创建新脚本”。
-   - 复制本仓库中 `WhatsAppTranslate.js` 的内容到编辑器。
+   - 复制本仓库中 `WhatsAppTranslate.js` 的所有代码到编辑器，注意粘贴前请删除编辑器中所有代码。
    - 保存脚本（Ctrl+S 或 Cmd+S）。
 
 3. **运行脚本**：
