@@ -3,7 +3,7 @@
 
 [![WhatsApp Web](https://img.shields.io/badge/WhatsApp-Web-green.svg)](https://web.whatsapp.com/)
 
-这是一个为 WhatsApp Web 设计的插件，集成自动翻译、电话区号检测和电商客服常用功能。基于免费谷歌翻译 API，提供消息翻译、常用短语选择以及国家信息展示。
+这是一个为 WhatsApp Web 设计的插件，集成自动翻译、电话区号检测和电商客服常用功能。基于免费谷歌翻译和bing翻译 API，提供消息翻译、常用短语选择以及国家信息展示。
 
 ## 功能
 
