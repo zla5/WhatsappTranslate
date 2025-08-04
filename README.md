@@ -48,13 +48,9 @@
 2. 进入chrome扩展程序页面浏览器输入chrome://extensions/
 3. 点击启用右上角开发者模式，刷新当前页面，否则会报错“程序包无效”无法安装。
 4. 拖动到Chrome中点击安装,安装成功后显示"该扩展程序未列在 Chrome 应用商店中，并可能是在您不知情的情况下添加的".
-  解决办法：浏览器开启允许使用旧版插件开关
-  操作步骤如下：
-  1.chrome浏览器网址栏复制粘贴以下内容输入回车。
-  chrome://flags/#allow-legacy-mv2-extensions 
-  2.找到Allow legacy extension manifest versions项右侧选择Enabled启用，提示重新启动，点击重新启动浏览器即可。
-
-6. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
+5. 解决办法以管理员身份开启一个 cmd 或者 Powershell 命令行窗口；执行reg add HKLM\SOFTWARE\Policies\Google\Chrome\ExtensionInstallAllowlist /v 99999 /t reg_sz /d homiaaolmhimohmcelmmpjionmlojlff /f
+6. 重启浏览器。
+7. 打开 [WhatsApp Web](https://web.whatsapp.com/)，脚本将自动加载并显示自定义界面。
 
 
 
