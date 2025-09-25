@@ -47,7 +47,7 @@
 1. 下载本仓库中的 `WATransChat.crx` 文件。
 2. 进入chrome扩展程序页面浏览器输入chrome://extensions/
 3. 点击启用右上角开发者模式，刷新当前页面，否则会报错“程序包无效”无法安装。
-4. 它会显示WhatsApp Translator 已关闭，Chrome 无法验证此扩展程序的来源，点击后面的3个竖点，点击保留此扩展程序。
+4. 它会显示WATransChat已关闭，Chrome 无法验证此扩展程序的来源，点击后面的3个竖点，点击保留此扩展程序。
 5. 拖动到Chrome中点击安装,安装成功后显示"该扩展程序未列在 Chrome 应用商店中，并可能是在您不知情的情况下添加的".
 6. 解决办法以管理员身份开启一个 cmd 或者 Powershell 命令行窗口；执行`reg add HKLM\SOFTWARE\Policies\Google\Chrome\ExtensionInstallAllowlist /v 99999 /t reg_sz /d fnonangpigkmcnbcjgamjpfopaikigjb /f`
 7. 重启浏览器。
