@@ -31,6 +31,13 @@
 4. 点击左侧的 **加载已解压的扩展程序**，选择刚刚解压的文件夹。
 5. 安装完成。
 
+## Microsoft Edge 扩展安装方法
+1. 下载WATransChat.crx文件
+2. 打开 Microsoft Edge 扩展程序页面（地址栏输入 `edge://extensions/` 回车）。
+3. 点击启用左侧的开发人员模式
+4. 将下载的WATransChat.crx拖到浏览器安装
+
+
 ## 其它浏览器扩展安装方法
 下载WATransChat3.2.crx拖到浏览器安装
 
