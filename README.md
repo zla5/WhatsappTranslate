@@ -19,7 +19,12 @@
 ![自动翻译演示](https://github.com/zla5/WhatsappTranslate/blob/edee77a23dc79349c8ab68623c2f014ddc5ac6ae/%E8%87%AA%E5%8A%A8%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
 ![输入文字自动翻译演示](https://github.com/zla5/WhatsappTranslate/blob/edee77a23dc79349c8ab68623c2f014ddc5ac6ae/%E8%BE%93%E5%85%A5%E6%96%87%E5%AD%97%E8%87%AA%E5%8A%A8%E7%BF%BB%E8%AF%91%E6%BC%94%E7%A4%BA.gif)
 ![](https://github.com/zla5/WATransChat/blob/66312851eb810476db44f1119ae7f08ef47c5307/Screenshot_2025-10-05-21-05-54-620_com.example.wa.jpg)
+
+软件设置页面
 ![](https://cdn.shopify.com/s/files/1/0073/3813/1519/files/3819d53a5341e46c6d4f247fa9901ddd.jpg?v=1760452736)
+
+
+
 # 安装方法
 
 ## 安卓手机版本
