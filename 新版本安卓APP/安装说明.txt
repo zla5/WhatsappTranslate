@@ -1,15 +1,9 @@
-此版本仅支持whatsapp版本，不支持whatsapp business
-
-目前只发现支持Android 15以下的版本，更高版本请自行刷机降级或找售后降级到Android 15以下版本，这比解手机BL锁简单100倍了。 以后如果更高版本可以使用了，我再出通知。
-如果遇到问题请在微信群里反馈，告诉我你的安卓版本号，如果你有支持更高系统版本的免root框架，也请在群里分享
+此版本仅支持whatsapp版本，不支持whatsapp business，因为whatsapp官网不提供whatsapp business直接下载apk文件，从其它网站下载你们又怕里面有病毒，为了安全考虑就不做whatsapp business版本。
 
 网盘中的软件你也可以从官方渠道下载
 WhatsApp.apk官方网页链接https://www.whatsapp.com/android，不要从谷歌商店下载，谷歌是精简过的版本和官方网站上的大小都不一样，兼容性不一样用起来会卡。
 LSPatch v0.7下载链接https://github.com/JingMatrix/LSPatch/releases/tag/v0.7
 shizuku-v13.6.0.r1086.2650830c-release.apk下载链接https://github.com/RikkaApps/Shizuku/releases/tag/v13.6.0
-
-查询你的设备安卓系统版本，以小米为例：设置-我的设备-全部参数与信息-Android版本 就能看到它是什么版本。
-其它手机查看方法自行搜索抖音。
 
 
 请根据网盘中的安装视频进行安装
